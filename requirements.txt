@@ -1,0 +1,37 @@
+# SaaS API-Only Dependencies (No Local GPU Required)
+# Locked to stable, tested versions
+
+# Core - Required for image handling
+pillow==10.0.1
+requests==2.31.0
+
+# AWS Bedrock (Primary SaaS Provider for this branch)
+boto3==1.28.57  # AWS SDK for Python
+botocore==1.31.57  # AWS core functionality
+
+# Azure OpenAI Service (Alternative)
+openai==0.28.1  # For Azure OpenAI Service compatibility
+azure-identity==1.14.0  # For Azure authentication
+azure-keyvault-secrets==4.7.0  # For secure key management (optional)
+
+# Alternative SaaS APIs
+replicate==0.15.4  # Replicate API client (Stable Diffusion)
+
+# Utilities
+python-dotenv==1.0.0  # For .env file support
+certifi  # SSL certificates
+
+# ============================================================================
+# LOCAL GPU DEPENDENCIES (Optional - Only if you want local generation too)
+# Uncomment below if you also want local Stable Diffusion capability
+# ============================================================================
+# diffusers==0.21.4
+# transformers==4.34.1
+# accelerate==0.23.0
+# torch==2.0.1
+# torchvision==0.15.2
+# gradio==3.50.2
+# xformers==0.0.22
+# safetensors==0.3.3
+# numpy==1.24.4
+# scipy==1.11.3
